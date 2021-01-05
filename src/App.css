@@ -113,11 +113,28 @@ button {
 }
 
 @media (max-width: 767px) {
-  .App {
-    width: 90%;
-  }
-  
-  .container {
-   width: 80%;
-  }
+.container {
+  width: max-content;
+  margin: auto;
+}
+
+.todo-form {
+  width: max-content;
+  margin: auto;
+}
+
+.list-container {
+  width: max-content;
+  margin: auto;
+}
+
+.list-item {
+  width: max-content;
+  margin: 1rem 0;  
+}
+
+.list-header {
+  flex: 1;
+  justify-content: space-between;
+};
 }
