@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(315deg, #e4d47d 0%, #a3a1bd 84%);
+}
+
+.container {
+  height: 90vh;
+  border: 1px solid rgba(107, 98, 98, 0.938);
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+}
+
+h1 {
+  color: rgb(70, 10, 22);
+  font-family: inherit;
+  text-decoration: underline;
+}
+
+.todo-form {
+  display: flex;
+  justify-content: space-around;
+  width: 400px;
+}
+
+input {
+  width: 80%;
+  padding: 10px;
+  border-radius: 30px;
+  border: none;
+}
+
+button {
+  margin: 0 5px;
+}
+
+.add {
+    font-size: 1rem;
+    background-color: #ffd414;
+    border-radius: 70px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    padding: 0.5rem 1rem;
+}
+
+.add:hover {
+    color: rgb(63, 14, 5);
+    background-color: rgb(136, 135, 131);
+}
+
+.edit {
+    font-size: 1rem;
+    background-color: #60f3d3;
+    border-radius: 70px;
+    border: none;
+    color: rgba(37, 4, 4, 0.911);
+    cursor: pointer;
+    outline: none;
+    padding: 0.5rem 1rem;
+}
+
+.edit:hover {
+    color: rgb(141, 33, 6);
+    background-color: rgb(136, 135, 131);
+}
+
+.delete {
+    font-size: 1rem;
+    background-color: #60f3d3;
+    border-radius: 70px;
+    border: none;
+    color: rgba(37, 4, 4, 0.911);
+    cursor: pointer;
+    outline: none;
+    padding: 0.5rem 1rem;
+}
+
+.delete:hover {
+    color: rgb(141, 33, 6);
+    background-color: rgb(136, 135, 131);
+}
+
+.list-container {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+}
+
+.list-item {
+  border-radius: 50px;
+  margin: 15px 0;
+  background-color: lightgray;
+  padding: 10px 20px;
+  display: flex;
+  width: 400px;
+  align-items: center;
+}
+
+.list-header {
+  flex: 1;
+}
+
+@media (max-width: 767px) {
+  .App {
+    width: 90%;
+  }
+  
+  .container {
+   width: 80%;
+  }
+}
