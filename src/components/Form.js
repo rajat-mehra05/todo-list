@@ -21,6 +21,9 @@ const Form = () => {
         setEditId(0);
         setTodo("");
         return;
+        /* if you don't return, it will jump to create another todo with the updated list,
+            hence you need to return from here.
+        */
       }
 
       if (todo !== "") {
